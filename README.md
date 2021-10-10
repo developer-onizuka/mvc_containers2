@@ -1,7 +1,8 @@
 # mvc_containers2
 
 # 1. Install dotnet-sdk
-https://docs.microsoft.com/ja-jp/dotnet/core/install/linux-ubuntu#2104-
+See also https://docs.microsoft.com/ja-jp/dotnet/core/install/linux-ubuntu#2104- .
+But you might use the Vagrantfile attached in this repository so that you could also install OS itself automatically.
 ```
 $ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 $ dpkg -i packages-microsoft-prod.deb
