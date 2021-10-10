@@ -12,14 +12,14 @@ sudo apt-get update; \
   sudo apt-get update && \
   sudo apt-get install -y dotnet-sdk-5.0
   
-  
+git clone https://github.com/developer-onizuka/mvc_containers2.git
+cd mvc_containers2/Employee
 dotnet add package MongoDB.Driver
 sudo docker run -d --rm --name mongo -p 27017:27017 mongo:latest
 
 export MONGO="localhost:27017"
 dotnet run
-dotnet publish -c relase -r linux-x64 --self-contained
-
+dotnet publish -c release -r linux-x64 --self-contained
 ```
 
 
