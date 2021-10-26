@@ -16,6 +16,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag employee:latest; docker save employee:latest > employee.tar
+    - name: Create New tag
+      run: docker tag employee:latest ${{ secrets.dockerhub_id }}/employee:beta
+    - name: Push image to the DockerHub
+      run: docker login -p ${{ secrets.dockerhub_secret }} -u ${{ secrets.dockerhub_id }}; docker image push ${{ secrets.dockerhub_id }}/employee:beta
     - uses: actions/upload-artifact@v1
       with:
         name: employee_${{ github.sha }}_amd64
