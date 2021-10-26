@@ -1,4 +1,5 @@
 # mvc_containers2
+[![.NET](https://github.com/developer-onizuka/mvc_containers2/actions/workflows/dotnet.yml/badge.svg)](https://github.com/developer-onizuka/mvc_containers2/actions/workflows/dotnet.yml)
 [![Docker Image CI](https://github.com/developer-onizuka/mvc_containers2/actions/workflows/docker-image.yml/badge.svg)](https://github.com/developer-onizuka/mvc_containers2/actions/workflows/docker-image.yml)
 
 # 1. Install dotnet-sdk
