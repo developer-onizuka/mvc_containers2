@@ -26,4 +26,4 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: employee_${{ github.sha }}_amd64
-        path: deb
+        path: .
