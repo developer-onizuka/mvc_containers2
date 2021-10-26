@@ -26,7 +26,7 @@ $ export MONGO="localhost:27017"
 $ dotnet run
 $ curl https://127.0.0.1:5001 -k
 ```
-Or you can do Downloading github's CI artifact file from https://github.com/developer-onizuka/mvc_containers2/actions/runs/1385034680#artifacts
+Or you can do Downloading github's CI artifact file from https://github.com/developer-onizuka/mvc_containers2/actions/workflows/docker-image.yml
 ```
 $ unzip employee_b0e461e7b9439056fa695ec6f6b254c721d6a5d9_amd64.zip
 $ sudo docker load -i employee.tar
