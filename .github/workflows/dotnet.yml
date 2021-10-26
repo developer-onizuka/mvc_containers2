@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: cd Employee; dotnet restore
     - name: Build
-      run: cd Employee; dotnet build --no-restore
+      run: cd Employee; dotnet add package MongoDB.Driver; dotnet build --no-restore
     - name: Test
       run: cd Employee; dotnet test --no-build --verbosity normal
