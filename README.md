@@ -1,4 +1,5 @@
 # mvc_containers2
+[![Docker Image CI](https://github.com/developer-onizuka/mvc_containers2/actions/workflows/docker-image.yml/badge.svg)](https://github.com/developer-onizuka/mvc_containers2/actions/workflows/docker-image.yml)
 
 # 1. Install dotnet-sdk
 See also https://docs.microsoft.com/ja-jp/dotnet/core/install/linux-ubuntu#2104- .
