@@ -33,7 +33,7 @@ $ sudo docker load -i employee.tar
 $ sudo docker run --rm -it -p 5001:5001 -p 5000:5000 --env MONGO="172.17.0.2:27017" employee:latest
 ```
 
-My C# code is also available for Cosmos DB. You can also use the environment value of MONGO for a connection string of Azure CosmosDB instead of localhost:27017 as like below:
+My C# code is also available for Azure CosmosDB. You can also use the environment value of MONGO for a connection string of Azure CosmosDB instead of localhost:27017 as like below:
 ---
 ```
 $ export MONGO="myfirstcosmosdb:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==@myfirstcosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@myfirstcosmosdb@"
