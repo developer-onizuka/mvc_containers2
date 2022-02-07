@@ -28,6 +28,7 @@ namespace Employee.Controllers
 			//MongoClient client = new MongoClient("mongodb://127.0.0.1:27017");
 			//MongoClient client = new MongoClient("mongodb://172.17.0.1:27017");
 			//string connectionString = "mongodb://" + ipaddr + ":27017";
+			ipaddr = ipaddr.Replace("mongodb://","");
 			string connectionString = "mongodb://" + ipaddr;
 			MongoClient client = new MongoClient(connectionString);
 			IMongoDatabase db = client.GetDatabase("mydb");
