@@ -21,10 +21,11 @@ namespace Employee.Controllers
         	public HomeController(ILogger<HomeController> logger)
    		{
 			var ipaddr = Environment.GetEnvironmentVariable("MONGO");
-			if (String.IsNullOrEmpty(ipaddr)) {
+			if (string.IsNullOrEmpty(ipaddr)) {
 				//ipaddr = "127.0.0.1";
 				ipaddr = "127.0.0.1:27017";
 			}	
+			Console.WriteLine("Connection to the mongoDB:" + ipaddr);
 			//MongoClient client = new MongoClient("mongodb://127.0.0.1:27017");
 			//MongoClient client = new MongoClient("mongodb://172.17.0.1:27017");
 			//string connectionString = "mongodb://" + ipaddr + ":27017";
@@ -56,7 +57,7 @@ namespace Employee.Controllers
 		[HttpPost]
 		public IActionResult Insert(EmployeeEntity emp)
 		{
-			Console.WriteLine(emp.FirstName);
+			Console.WriteLine("Employee added: " + emp.FirstName + " " +  emp.LastName);
 			collection.InsertOne(emp);
 			ViewBag.Message = "Employee added successfully!";
 			return View();
