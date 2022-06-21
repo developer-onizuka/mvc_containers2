@@ -12,6 +12,11 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
-steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+jobs:
+  - job: FirstJob
+    steps: 
+    - bash: echo "The First Job"
+
+  - job: SecondJob
+    steps: 
+    - bash: echo "The Second Job"
